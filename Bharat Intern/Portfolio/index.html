@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9a2719c898.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Science Engineering Student</p>
+                <h1>Hi, I am <span>Abhishek</span></h1>
+                <h2>I'm passionate about Data Science, Web Development, and Problem Solving.</h2>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/userd1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me</h1>
+                    <p>
+                        Hi there! 👋 I'm a Computer Science and Engineering student pursuing an Integrated Masters of Technology.
+                        Specializing in Computational and Data Science at Abhi Institute of Technology, India.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')"> Experience</p>
+                        <p class="tab-links" onclick="opentab('education')"> Education</p>
+                    </div>
+                    <div class="tab-contents active-tab skills-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Data Science</span><br>
+                                <ul>
+                                    <li>Machine Learning</li>
+                                    <li>Data Visualization</li>
+                                    <li>Statistical Analysis</li>
+                                    
+                                </ul>
+                            </li>
+                            <li>
+                                <span>Web Development</span><br>
+                                <ul>
+                                    <li>Web Design</li>
+                                    <li>Front-end Frameworks</li>
+                                    <li>Back-end Development</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>Programming Languages</span><br>
+                                <ul>
+                                    <li>Python, C++, Java</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>Data Science</span><br>
+                                Worked on various Data Science projects, leveraging statistical analysis and machine learning techniques to extract valuable insights and patterns from complex datasets. Applied data visualization to communicate findings effectively.
+                            </li>
+                            <li>
+                                <span>Web Development</span><br>
+                                Contributed to the development of dynamic and responsive web applications, focusing on creating seamless user experiences. Utilized modern technologies and frameworks to build interactive and visually appealing interfaces.
+                            </li>
+                            <li>
+                                <span>Problem Solving</span><br>
+                                Dedicated to solving complex problems through algorithmic thinking and logical reasoning. Regularly participated in coding challenges on platforms like LeetCode and GeeksforGeeks, honing problem-solving skills in various domains of computer science.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>2020 - Present:</span>
+                                <br><br>Integrated M.Tech in Computational and Data Science
+                                <br>Abhi Institute of Technology, India
+                                <br><br>CGPA: 9.81
+                            </li>
+                            <li>
+                                <span>July 2020:</span>
+                                <br><br>12th Standard
+                                <br>Navya H Sec School
+                                <br><br>Percentage: 99%
+                            </li>
+                            <li>
+                                <span>May 2018:</span>
+                                <br><br>10th Standard
+                                <br>Navya H Sec School 
+                                <br><br>Percentage: 100%
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h2>Machine Learning</h2>
+                    <p>
+                        Unlock the potential of data with our Machine Learning services. We teach computers to learn,
+                        predict, and adapt, helping you uncover valuable insights and automate tasks effortlessly.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>
+                        Elevate your online presence with our Web Development services. We create visually appealing,
+                        user-friendly websites and applications tailored to your unique needs.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work1.jpg">
+                    <div class="layer">
+                        <h3>Movies Rating System</h3>
+                        <p>
+                            Predict movie ratings based on factors like duration, release year, and viewer votes.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/wrok2.jpg">
+                    <div class="layer">
+                        <h3>Object Detection System</h3>
+                        <p>
+                            Detect and recognize objects in images through the advanced capabilities of YOLOV4 and CNN, 
+                            providing accurate and efficient object detection.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn"> See More</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>
+                        <a style="text-decoration: none; color: inherit;">
+                            <i class="fa-solid fa-paper-plane"></i> contact@gmail.com
+                        </a>
+                    </p>
+                    <div class="social-icons">
+                        <!--- replace with social media links-->
+                        <a href="https://www.facebook.com/login.php/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/login" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/topics/login" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Images/My_Cv.txt" download class="btn btn2" target="_blank">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="contactForm" action="" method="post">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="button" class="btn btn2" onclick="submitForm()">Submit</button>
+                    </form>
+                    <div id="successMessage" style="display: none;">
+                        <p>Message has been sent!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> 
+                Xyz &copy; 2024 <i class="fa-solid fa-heart"></i> <br><br>
+                India<br><br>
+                <h5 style="font-size: 10px;">Copyright &copy; XYZ - All Rights Reserved.</h5>
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
